@@ -1,0 +1,332 @@
+
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%; 
+    height:100%; 
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+ }
+
+.header{
+    background: url('../img/audi-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.header__logo-img{
+    display: flex;
+    align-items: center;
+    width: 70px;
+}
+
+.header__top-line{
+    background-color: rgba(207, 162, 162, 0.7);
+} 
+
+.header__top-line .container{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+
+.menu{
+    font-size: 40px;
+
+}
+
+.menu:hover{
+    color: #fff;
+}
+
+.header__nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 30px;
+    padding: 0px 10px;
+
+}
+
+.header__nav-link:hover{
+    color: #fff;
+}
+
+
+
+
+.header__content{
+    padding: 200px 0 335px;
+}
+
+.header__content-inner{
+    width: auto;
+}
+
+.header__title{
+    color: rgb(255, 254, 254);
+    font-size: 50px;
+    text-shadow: 0px 0px 1px rgb(226, 225, 225), 0 0 4em black;
+    margin-bottom: 40px;
+    font-weight: 400; 
+}
+
+.header__subtitle{
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px #fff, 0 0 4em black;
+}
+
+.header__btn{
+    color: #000;
+    background: linear-gradient(135deg, rgb(121, 95, 95), rgb(184, 142, 142) 50%, rgb(121, 95, 95));
+    padding: 15px 60px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid rgb(207, 162, 162);
+}
+
+.header__btn:hover{
+    background-color: rgb(110, 110, 110);
+    border: 1px solid rgb(110, 110, 110);
+    color: #fff;
+}
+
+
+
+
+
+/* ===============info================ */
+
+.info{
+    background-color: darkslategrey;
+}
+
+.info__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px;
+    flex-wrap: wrap;
+}
+
+.info__item{
+    width: 200px;
+    border: 1px solid #000;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(69, 76, 98), darkslategrey 50%, rgb(121, 95, 95));   
+}
+
+.info__text{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info__btn{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: darkslategrey;
+    float: unset;
+}
+
+.info__btn:hover{
+    background-color: rgb(110, 110, 110);
+    border: 1px solid transparent;
+}
+
+
+
+
+/* ==========features============ */
+
+.features{
+    padding: 300px 0;
+    background: url('../img/audi-5.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.features__inner{
+    display: flex;
+}
+
+.features__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background: linear-gradient(135deg, rgb(69, 76, 98), darkslategrey 50%, rgb(121, 95, 95));
+    flex-wrap: wrap;
+}
+
+
+.features__text{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+/* ===========footer============= */
+
+.footer{
+    padding: 20px 0 ;
+    background-color: darkslategrey;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: auto;
+    padding: 5px;
+}
+
+.footer__title{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer__tovarmark{
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer__secure{
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer__system{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer__cop{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__email{
+}
+
+
+/* =======media========= */
+
+@media (max-width: 991px) {
+    .header__title{
+        font-size: 40px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .header__subtitle{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .header__title{
+        text-align: center;
+    }
+
+    .header__btn{
+        width: 250px;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .menu{
+        margin-right: 40px;
+    }
+
+    .info__item{
+        margin: 40px;
+        width: 280px;
+    }
+
+    .info__inner{
+        justify-content: center;
+        padding: 30px 0 30px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 414px){
+    .header__title{
+        font-size: 30px;
+    }
+    .header__btn{
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .header__subtitle{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .header__title{
+        text-align: center;
+    }
+
+    .info__inner{
+        justify-content: center;
+        padding: 30px 0 30px;
+    }
+
+    .info__item{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .info__item:last-child{
+        margin-bottom: 0px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .header__nav-link{
+        color: transparent;
+    }
+}
